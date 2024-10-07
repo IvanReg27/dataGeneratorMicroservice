@@ -28,7 +28,7 @@ public class TestDataServiceImpl implements TestDataService {
                                 (long) getRandomNumber(1, 10)
                         );
                         data.setMeasurement(
-                                getRandomNumber(11, 99)
+                                getRandomNumber(15, 20)
                         );
                         data.setMeasurementType(
                                 getRandomMeasurement(

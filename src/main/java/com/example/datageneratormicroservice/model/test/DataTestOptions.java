@@ -12,5 +12,4 @@ public class DataTestOptions {
 
     private int delayInSeconds;
     private Data.MeasurementType[] measurementTypes;
-
 }

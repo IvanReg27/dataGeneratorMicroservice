@@ -28,11 +28,11 @@ public class KafkaConfig {
     @Bean
     public NewTopic temperatureTopic() {
         return TopicBuilder.name("data-temperature")
-                .partitions(3)
+                .partitions(5)
                 .replicas(1)
                 .config(
                         TopicConfig.RETENTION_MS_CONFIG,
-                        String.valueOf(Duration.ofDays(5).toMillis())
+                        String.valueOf(Duration.ofDays(7).toMillis())
                 )
                 .build();
     }
@@ -40,11 +40,11 @@ public class KafkaConfig {
     @Bean
     public NewTopic voltageTopic() {
         return TopicBuilder.name("data-voltage")
-                .partitions(3)
+                .partitions(5)
                 .replicas(1)
                 .config(
                         TopicConfig.RETENTION_MS_CONFIG,
-                        String.valueOf(Duration.ofDays(5).toMillis())
+                        String.valueOf(Duration.ofDays(7).toMillis())
                 )
                 .build();
     }
@@ -52,11 +52,11 @@ public class KafkaConfig {
     @Bean
     public NewTopic powerTopic() {
         return TopicBuilder.name("data-power")
-                .partitions(3)
+                .partitions(5)
                 .replicas(1)
                 .config(
                         TopicConfig.RETENTION_MS_CONFIG,
-                        String.valueOf(Duration.ofDays(5).toMillis())
+                        String.valueOf(Duration.ofDays(7).toMillis())
                 )
                 .build();
     }

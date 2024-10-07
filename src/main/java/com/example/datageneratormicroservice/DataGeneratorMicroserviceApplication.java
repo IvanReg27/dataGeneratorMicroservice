@@ -9,5 +9,4 @@ public class DataGeneratorMicroserviceApplication {
     public static void main(String[] args) {
         SpringApplication.run(DataGeneratorMicroserviceApplication.class, args);
     }
-
 }
